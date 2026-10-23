@@ -11,6 +11,21 @@ MCMC and Quasi-Maximum Likelihood (QML)? And what does it cost to compute them?
 <a href="https://colab.research.google.com/github/SGhuman123/Fordham-Time-Series-Econometrics/blob/main/VI_GARCH.ipynb">
 <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
+## In plain English
+
+- **Volatility** is how bumpy a stock's ride is. Stormy days tend to follow stormy days, like the weather. Banks and investors forecast it to manage risk.
+- **GARCH** is the standard volatility forecasting model. The Bayesian version also tells you *how sure* the forecast is.
+- The trusted Bayesian method (**MCMC**) works by slow trial and error. **Variational Inference (VI)** is a machine-learning shortcut that
+  fits the closest simple bell curve instead.
+- **What we found:**
+  - VI forecasts are as accurate as the trusted methods (within 1%), for Microsoft and for 28 large US companies.
+  - The simple version of VI is over-confident, while the full version gets the uncertainty right.
+  - Allowing for occasional crash days (a Student-t model) improves the fit.
+  - For a model this small, VI is not faster. Its pay-off comes with bigger models.
+
+New to the topic? Start with slide 2 (*The project in plain English*) and the jargon-buster slide in [`slides/`](slides), or read the
+"In plain English" boxes at the top of each notebook section.
+
 ## What is in the repo
 
 | Path | Contents |
